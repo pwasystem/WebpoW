@@ -1,25 +1,16 @@
 # WebpoW
 Sistema para criação de aplicações PWA
 
-
-
-
 Clonar sistema
 
-1. Criar projeto
-2. Criar aplicativo com analitycs
-3. Definir regras públicas firestore
-rules_version = '2';
-service cloud.firestore {
-  match /databases/{database}/documents {
-    match /{document=**} {
-      allow read, write;
-    }
-  }
-}
-4. Iniciar diretório do firebase
-5. Copiar pasta public com o sistema 
-6. Alterar conexão no arquivo pow.js
-7. Clonar WebpoW
-8. Salvar indice e regras e firebase.json
-9. fazer deploy
+1. Criar novo projeto no Google Firebase utilizando o plano Spark.
+2. Criar novo aplicativo web no Firebase com Google Analitycs ativo.
+3. Ativar Firebase Hosting.
+4. Ativar autenticação por e-mail e senha no Firebase Authentication.
+5. Criar uma base de dados no Firestore.
+6. Definir regras públicas para gravar no Firestore.
+7. Iniciar projeto do Firebase no micro de desenvolvimento.
+8. Copiar aquivos do WebPow para pasta do projeto.
+9. Gerar clone no site https://webpow.web.app
+10. Salvar indice, regras e conexão gerados na clonagem. 
+13. Fazer deploy.
