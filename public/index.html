@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+	<head>
+		<meta charset='UTF-8'>
+		<title>WebpoW</title>
+		<meta name='description' content='Progressive Web App Content Management System'>
+		<meta name='keywords' content='content,management,system,pwa,cms,progressive,web,app'>
+		<meta name='generator' content='Notepad++'>
+		<meta name='reply-to' content='spiderpoison@gmail.com'>
+		<meta name='author' content='Luiz Roberto Nogueira Junior'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>		
+		<meta name="theme-color" content="#673AB7">
+		<link rel="manifest" href="manifest.json">
+		<link rel="apple-touch-icon" href="logo180.png">
+		<link rel="preconnect" href='https://www.gstatic.com/'>
+		<link rel="preconnect" href='https://firebaseinstallations.googleapis.com'>
+		<link rel='shortcut icon' href='favicon.ico'>
+		<link rel="stylesheet" href="w3.css">
+	</head>
+	<body>
+		<!--header-->
+		<header id='header' class='w3-bar w3-deep-purple'>
+			<!--logo-->
+			<figure class='w3-margin-0 w3-padding-0 w3-bar-item' >
+				<img  class='w3-left w3-point' onclick="Load('#inicio')" src='logo.webp' alt='P.O.W.' title='P.O.W.' width='159' height='56'>
+			</figure>
+			<!--menu-->
+			<div class="w3-dropdown-hover w3-right w3-bar-item w3-padding-16">
+				<img src='menu.webp' alt='menu' width='25' height='25'>
+				<div class="w3-dropdown-content w3-bar-block w3-card w3-border w3-border-deep-purple" style="right:0px;top:57px">
+					<span id='menu'></span>
+				</div>
+			</div>
+		</header>
+		<!--main-->
+		<main id='main'></main>
+		<!--footer-->
+		<footer>
+			<!--aviso-->
+			<div id="aviso" class="w3-modal">
+				<div class="w3-modal-content w3-round">
+					<div id='avisoCor' class="w3-container w3-padding-16">
+						<span onclick="E('#aviso')" class="w3-button w3-display-topright">&times;</span>
+						<h2 class='w3-container' id='avisoTitulo'>Título</h2>
+						<p class='w3-padding w3-center' id='avisoMensagem'>Mensagem</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+		<script src='conexao.js'></script>
+		<script src='pow.js'></script>
+	</body>
+</html>
